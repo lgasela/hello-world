@@ -19,7 +19,7 @@ pipeline {
    stage('Deploy') {
      steps {
        echo 'Deploying...'
-        echo 'Lloyd is happy'
+        sh 'hostname'
      }
    }
   }
