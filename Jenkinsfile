@@ -19,7 +19,7 @@ pipeline {
    stage('Deploy') {
      steps {
        echo 'Deploying...'
-        sh -x https://github.com/lgasela/hello-world/edit/master/test.sh
+        sh -x $WORKSPACE/test.sh
      }
    }
   }
