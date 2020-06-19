@@ -19,6 +19,7 @@ pipeline {
    stage('Deploy') {
      steps {
        echo 'Deploying...'
+        sh 'chmod ugo+xr test.sh'
         sh './test.sh'
      }
    }
