@@ -19,7 +19,7 @@ pipeline {
    stage('Deploy') {
      steps {
        echo 'Deploying...'
-        sh -x $WORKSPACE/test.sh
+        sh './test.sh'
      }
    }
   }
